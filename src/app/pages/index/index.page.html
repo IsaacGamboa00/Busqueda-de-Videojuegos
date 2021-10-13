@@ -1,0 +1,15 @@
+<app-nav-bar (searchGame)="search($event)"></app-nav-bar>
+
+<div class="body_container">
+    <h1>Todos los Juegos</h1>
+
+    <div class="container-hidden" *ngIf="hidden">
+        <h1 id="txt-search">Busca un juego...</h1>
+        <img [src]="urlImgS" >
+    </div>
+    
+    <div  class="content">
+        <app-game-item  [name]="game.external" [id]="game.gameID" [img]="game.thumb" *ngFor="let game of games"></app-game-item>
+    </div>
+
+</div>

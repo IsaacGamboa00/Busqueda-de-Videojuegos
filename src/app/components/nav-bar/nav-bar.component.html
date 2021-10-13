@@ -1,0 +1,35 @@
+<nav class="topnav">
+
+    <div class="topnav_logo container-flex" (scroll)="onScroll()" [ngClass]="navFixed? 'fixed':'topnav_logo'">
+        <img [src]="pathImg">
+    </div>
+
+    <div class="container-flex topnav_content">
+
+        <div class="topnav_txtcontainer">
+           
+            <input  type="text" placeholder="¿Qué estás buscando?" [(ngModel)]="gameName">
+            <img src="./../../../assets/icons/icontxt.png" (click)="buscar()">
+            
+        </div>
+    
+        <div class="topnav_element">
+            <a href=""> 
+                Resumen de compras
+                <img src="./../../../assets/icons/carrito.png" >
+            </a>
+        </div>
+    
+        <div class="topnav_element">
+            <a href="">
+                {{userName}}
+                <img src="./../../../assets/icons/profile.png" >
+            </a>
+            
+        </div>
+
+    </div>
+    
+
+</nav>
+
