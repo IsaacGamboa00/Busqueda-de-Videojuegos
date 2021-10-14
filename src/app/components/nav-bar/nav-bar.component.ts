@@ -1,4 +1,5 @@
-import { Component,EventEmitter, HostListener, OnInit, Output } from '@angular/core';
+import { Component,EventEmitter, HostListener, Input, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,15 +12,16 @@ export class NavBarComponent implements OnInit {
   public pathImg: string
   public userName: string
   public navFixed: boolean
-
   public gameName:string=''
+  @Input() inputHide:boolean
 
   @Output() searchGame = new EventEmitter<string>();
 
-  constructor() {
+  constructor(private router:Router) {
     this.pathImg = "./../../../assets/logos/Logo.png"
     this.userName = "Eduardo"
     this.navFixed = false
+    this.inputHide = false
     
   }
 
@@ -27,9 +29,11 @@ export class NavBarComponent implements OnInit {
     
   }
 
+  navigate(){
+    this.router.navigate([''])
+  }
 
   buscar(){
-    console.log('se emitio')
     this.searchGame.emit(this.gameName)
   }
 

@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { GameItemComponent } from './game-item/game-item.component';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -16,8 +18,9 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule
-    
+    FormsModule,
+    RouterModule
+  
   ],
   exports:[
     NavBarComponent,

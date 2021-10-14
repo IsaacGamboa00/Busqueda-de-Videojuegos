@@ -1,0 +1,25 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="body_container">
+    <h1>{{game.info.title}}</h1>
+    
+    <div class="container_details">
+        <img src="{{game.info.thumb}}" >
+        <span>
+            Precio Actual : {{game.cheapestPriceEver.price}}
+        </span>
+    </div>
+
+    <h2>Informacion de ofertas</h2>
+    <div class="container_deals">
+        
+        <div class="deal" *ngFor="let deal of game.deals">
+                <p>Id de tienda: {{deal.storeID}}</p>
+                <p>Precio: {{deal.price}}</p>
+                <p>precio de venta al público: {{deal.retailPrice}}</p>
+                <img [src]="urlLogoStore+(deal.storeID-1)+'.png'" >
+        </div>
+        
+    </div>
+
+</div>

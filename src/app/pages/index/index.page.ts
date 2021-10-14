@@ -26,10 +26,15 @@ export class IndexPage implements OnInit {
   }
 
   search(name:string){
-    console.log('entre a getname y se emitio correctamente')
-    this.gameName=name
-    this.getGames()
-    this.isHidden()
+    
+    if(name ==""){
+      window.alert("Upss creo que no has buscado nada :)");
+    }else{
+      this.hidden=false
+      this.gameName=name
+      this.getGames()
+    } 
+
   }
 
   getGames(){
@@ -42,12 +47,5 @@ export class IndexPage implements OnInit {
     )
   }
 
-  isHidden(){
-    if(this.games==[]){
-      this.hidden= true
-    }else{
-      this.hidden= false
-    }
-  }
 
 }

@@ -8,12 +8,14 @@ import { ComponentsModule } from './components/components.module';
 import { GameService } from './services/game/game.service';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { GameDetailsPage } from './pages/game-details/game-details.page';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexPage
+    IndexPage,
+    GameDetailsPage
     
     
   ],
