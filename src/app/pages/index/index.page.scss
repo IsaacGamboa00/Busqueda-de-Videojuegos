@@ -29,7 +29,6 @@ app-game-item{
 }
 .container-hidden{
     position: relative;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,8 +43,48 @@ app-game-item{
 #txt-search{
     position: absolute;
     top: 30%;
-    left: 28%;
+    left: 33%;
     color: var(--primary-color);
     font-weight: bold;
-    font-size: 4em;
+    font-size: 3em;
 }
+
+@media only screen and (max-width: 1400px) {
+
+    #txt-search{
+        
+        font-size: 2em;
+        
+    }
+    
+  }
+
+  @media only screen and (max-width: 900px) {
+
+    #txt-search{
+        left: 30%;
+        font-size: 1.5em;
+    }
+
+    .container-hidden img{
+        width: 50%;
+    
+        
+    }
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    #txt-search{
+        left: 20%;
+        font-size: 1.5em;
+    }
+
+    .container-hidden img{
+        width: 80%;
+    
+        
+    }
+    
+  }

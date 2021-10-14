@@ -16,6 +16,11 @@
     padding: 30px;
     margin: 30px auto;
     border-radius: 20px;
+    
+}
+
+.container_details img{
+    width: 70%;
 }
 
 h2{
@@ -45,6 +50,27 @@ h2{
 span{
     font-size: 1.5em;
     font-weight: bold;
-    margin-left: 100px;
+    margin-left: 5%;
 }
+
+@media only screen and (max-width: 1400px) {
+
+    span{
+        font-size: 1em;
+        font-weight: bold;
+        margin-left: 5%;
+    }
+    
+  }
+
+  @media only screen and (max-width: 1400px) {
+
+    span{
+        font-size: 0.8em;
+        font-weight: bold;
+        margin-left: 5%;
+    }
+    
+  }
+
 

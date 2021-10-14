@@ -40,7 +40,7 @@
     position: relative;
 }
 .topnav_txtcontainer img{
-    width: 9%;
+    height: 150%;
     position: absolute;
     left: -5px;
     top: -5px;
@@ -101,9 +101,13 @@
     .topnav_txtcontainer{
         height: 20%;
     }
+
+    .topnav_txtcontainer input{
+        font-size: 0.7em;
+    }
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
     .topnav_logo{
         width: 130px;
     }
@@ -113,6 +117,10 @@
     }
     .topnav_txtcontainer{
         width: 70%;
-        height: 35%;
+        
+    }
+
+    .topnav_txtcontainer input{
+        font-size: 0.5em;
     }
   }
